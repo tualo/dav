@@ -1,0 +1,23 @@
+{
+    "name": "tualo/dav",
+    "description": "tualo - dav",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas Hoffmann",
+            "email": "thomas.hoffmann@tualo.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Tualo\\Office\\DAV\\": "src/"
+        },
+        "files": ["src/functions.php"]
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "ramsey/uuid": "*",
+        "sabre-io/dav": "*"
+    }
+}
