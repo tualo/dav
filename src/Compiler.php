@@ -1,5 +1,5 @@
 <?php
-namespace Tualo\Office\ERP;
+namespace Tualo\Office\DAV;
 
 use Tualo\Office\Basic\TualoApplication;
 use Tualo\Office\ExtJSCompiler\ICompiler;
