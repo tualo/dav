@@ -100,7 +100,7 @@ class Install implements ICommandline{
             
 
             // immer zum schluss
-            'install/ds_fill'    => 'refreshing ds data',
+            'install/fill_ds'    => 'refreshing ds data',
 
         ];
         
