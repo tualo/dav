@@ -8,3 +8,4 @@ require_once "Routes/Upload.php";
 require_once "Checks/Tables.php";
 require_once "Commands/Install.php";
 require_once "Routes/Test.php";
+require_once "Routes/Test2.php";
