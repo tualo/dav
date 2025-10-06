@@ -26,7 +26,7 @@ class Test2 implements IRoute
         BasicRoute::add('/dav(?P<file>(.)+)', function () {
             $db = App::get('session')->getDB();
 
-            App::logger('DAV')->debug("DAV server:", print_r($_SERVER, true));
+            App::logger('DAV')->debug("DAV server:" . print_r($_SERVER, true));
             App::logger('DAV')->debug("DAV gestartet");
             App::logger('DAV')->debug("DAV REQUEST_METHOD: " . $_SERVER['REQUEST_METHOD']);
 
@@ -36,8 +36,8 @@ class Test2 implements IRoute
 
             // Now we're creating a whole bunch of objects
 
-            $rootDirectory = new DAV\FS\Directory(App::get('basePath') . '/public');
-            // $rootDirectory = new \Tualo\Office\BinaryDocx\VFSDirectory('public');
+            // $rootDirectory = new DAV\FS\Directory(App::get('basePath') . '/public');
+            $rootDirectory = new \Tualo\Office\BinaryDocx\VFSDirectory('public');
 
             // The object tree needs in turn to be passed to the server class
             $server = new DAV\Server($rootDirectory);
